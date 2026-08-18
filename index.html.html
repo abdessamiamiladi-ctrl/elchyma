@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="فستان السهرة الراقي - أناقة لا تفنى وتصميم عصري يناسب أثمن مناسباتك. اطلبي الآن!">
+    <title>أوريانا | فستان السهرة الملكي</title>
+    <!-- خطوط جوجل العربية الفاخرة -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- ملف الـ CSS الخارجي -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo">أوريانا <span>ORIESSA</span></a>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#gallery">التفاصيل</a></li>
+                    <li><a href="#sizes">المقاسات</a></li>
+                    <li><a href="#faq">الأسئلة الشائعة</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#checkout" class="btn btn-primary">اطلبي الآن</a>
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="القائمة">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge">تشكيلة الحرير الملكي الجديدة</span>
+                    <h1>تألقي بسحر فريد في كل مناسبة</h1>
+                    <p>فستان بتصميم عصري يمزج بين رقي التفاصيل الكلاسيكية ونعومة الأقمشة الفاخرة ليمنحك حضوراً لا يُنسى.</p>
+                    <div class="hero-buttons">
+                        <a href="#checkout" class="btn btn-primary btn-lg">اطلبي الفستان الآن</a>
+                        <a href="#gallery" class="btn btn-outline btn-lg">استعرضي الصور</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- استبدل الرابط أدناه بصورة المنتج الرئيسية -->
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80" alt="فستان سهرة نسائي أنيق" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Gallery & Details Section -->
+        <section id="gallery" class="product-section py-section">
+            <div class="container product-grid-layout">
+                <!-- معرض الصور -->
+                <div class="gallery-wrapper">
+                    <div class="main-img-container">
+                        <!-- الصورة الرئيسية التي تتغير عند الضغط على المصغرات -->
+                        <img id="mainProductImg" src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80" alt="صورة الفستان الرئيسية" loading="lazy">
+                    </div>
+                    <div class="thumbnails-grid">
+                        <!-- صور مصغرة للاستبدال -->
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=300&q=80" alt=" زاوية 1" class="thumb active" onclick="changeImage(this)">
+                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=300&q=80" alt="زاوية 2" class="thumb" onclick="changeImage(this)">
+                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=300&q=80" alt="زاوية 3" class="thumb" onclick="changeImage(this)">
+                    </div>
+                </div>
+
+                <!-- تفاصيل المنتج وشراء -->
+                <div class="product-details" id="checkout">
+                    <h2>فستان السهرة الملكي المطرذ</h2>
+                    <div class="price-box">
+                        <span class="current-price">٥٥٠ ر.س</span>
+                        <span class="old-price">٧٥٠ ر.س</span>
+                        <span class="discount-tag">خصم لفترة محدودة</span>
+                    </div>
+                    <p class="short-desc">مصنوع يدوياً بعناية فائقة من أجود خامات الشيفون والحرير، ليضمن لكِ الراحة والانسيابية مع إطلالة ملكية ساحرة.</p>
+                    
+                    <!-- خيارات الألوان -->
+                    <div class="option-group">
+                        <label>اللون المتوفر:</label>
+                        <div class="color-options">
+                            <span class="color-dot active" style="background-color: #e3d5ca;" title="عاجي"></span>
+                            <span class="color-dot" style="background-color: #d8b4a0;" title="وردي باهت"></span>
+                            <span class="color-dot" style="background-color: #332211;" title="بني داكن"></span>
+                        </div>
+                    </div>
+
+                    <!-- خيارات المقاسات -->
+                    <div class="option-group">
+                        <label>المقاس:</label>
+                        <div class="size-options">
+                            <button type="button" class="size-btn">S</button>
+                            <button type="button" class="size-btn active">M</button>
+                            <button type="button" class="size-btn">L</button>
+                            <button type="button" class="size-btn">XL</button>
+                        </div>
+                    </div>
+
+                    <a href="#checkout" class="btn btn-primary btn-block btn-lg">أضف للسلة واطلب الآن</a>
+                    
+                    <div class="mini-features">
+                        <span>✨ توصيل سريع لجميع المدن</span>
+                        <span>✨ إمكانية الاستبدال والاسترجاع</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section py-section bg-alt">
+            <div class="container">
+                <div class="section-title">
+                    <h2>لماذا يختار النساء فستان أوريانا؟</h2>
+                    <p>تفاصيل دقيقة صنعت خصيصاً لتلائم ذوقك الرفيع</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">💎</div>
+                        <h3>خامات عالية الجودة</h3>
+                        <p>أقمشة مستوردة بعناية فائقة تضمن متانة الفستان ولمعانه الراقي.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👗</div>
+                        <h3>تصميم أنيق ومريح</h3>
+                        <p>قصة مدروسة بعناية تمنحك حرية الحركة وثقة تامة طوال السهرة.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌟</div>
+                        <h3>مثالي للمناسبات</h3>
+                        <p>خيارك الأمثل لحفلات الزفاف، الأعياد، والسهرات الخاصة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lifestyle Showcase -->
+        <section class="lifestyle-section py-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>إطلالات ساحرة</h2>
+                    <p>شاهدي كيف يبدو الفستان في الواقع</p>
+                </div>
+                <div class="lifestyle-grid">
+                    <!-- استبدل الصور حسب الرغبة -->
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80" alt="عرض الفستان 1" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=600&q=80" alt="عرض الفستان 2" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80" alt="عرض الفستان 3" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Size Guide Section -->
+        <section id="sizes" class="sizes-section py-section bg-alt">
+            <div class="container">
+                <div class="section-title">
+                    <h2>دليل المقاسات</h2>
+                    <p>اختاري المقاس الأنسب لكِ بدقة</p>
+                </div>
+                <div class="table-responsive">
+                    <table class="size-table">
+                        <thead>
+                            <tr>
+                                <th>المقاس</th>
+                                <th>محيط الصدر (سم)</th>
+                                <th>محيط الخصر (سم)</th>
+                                <th>الطول الإجمالي (سم)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>S</td>
+                                <td>82 - 86</td>
+                                <td>64 - 68</td>
+                                <td>145</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>M</td>
+                                <td>87 - 91</td>
+                                <td>69 - 73</td>
+                                <td>146</td>
+                            </tr>
+                            <tr>
+                                <td>L</td>
+                                <td>92 - 96</td>
+                                <td>74 - 78</td>
+                                <td>148</td>
+                            </tr>
+                            <tr>
+                                <td>XL</td>
+                                <td>97 - 102</td>
+                                <td>79 - 84</td>
+                                <td>150</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section py-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>آراء عملائنا المميزات</h2>
+                    <p>رأي من قاموا بتجربة الفستان بأنفسهم</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="review-text">"الفستان فاق توقعاتي بكثير! القماش فاخر جداً والمقاس كان مضبوطاً تماماً تماماً كما في الجدول. شكراً أوريانا."</p>
+                        <h4 class="client-name">سارة أحمد</h4>
+                        <span class="client-location">الرياض</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="review-text">"وصلني في وقت قياسي، والتغليف راقي للغاية. التصميم على الطبيعة أجمل بكثير، أنيق ومريح في اللبس."</p>
+                        <h4 class="client-name">نورة المرواني</h4>
+                        <span class="client-location">جدة</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section py-section bg-alt">
+            <div class="container">
+                <div class="section-title">
+                    <h2>الأسئلة الشائعة</h2>
+                    <p>إجابات سريعة حول الطلب والشحن</p>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">ما هي مدة الشحن والتوصيل؟ <span class="icon">+</span></button>
+                        <div class="accordion-content">
+                            <p>يتم شحن الطلبات خلال 2 إلى 4 أيام عمل داخل المدن الرئيسية، ودمنا نوفر خدمة التوصيل السريع لضمان وصول طلبك في أسرع وقت.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">هل يمكنني استبدال أو استرجاع الفستان؟ <span class="icon">+</span></button>
+                        <div class="accordion-content">
+                            <p>نعم، نوفر سياسة استبدال واسترجاع مرنة خلال 7 أيام من استلام الطلب، بشرط أن يكون المنتج بحالته الأصلية غير مدبّس أو مستخدم.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">كيف أعرف مقاسي المناسب بدقة؟ <span class="icon">+</span></button>
+                        <div class="accordion-content">
+                            <p>يمكنك الاستعانة بجدول المقاسات الموضح أعلاه ومقارنة أبعادك الشخصية (الصدر والخصر) للحصول على المقاس المثالي.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta py-section text-center">
+            <div class="container">
+                <h2>جاهزة لتكوني نجمة السهرة؟</h2>
+                <p>لا تفوتي الفرصة واطلبي الفستان الآن قبل نفاد الكمية المتاحة.</p>
+                <a href="#checkout" class="btn btn-primary btn-lg">اطلبي الفستان الآن</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo">أوريانا <span>ORIESSA</span></a>
+                <p>علامة تجارية متخصصة في تقديم أزياء السهرة النسائية الفاخرة بأعلى معايير الجودة والأناقة.</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#gallery">التفاصيل والمقاسات</a></li>
+                    <li><a href="#faq">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل اجتماعي</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Snapchat">Snapchat</a>
+                    <a href="#" aria-label="TikTok">TikTok</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع حقوق النشر محفوظة © 2026 أوريانا.</p>
+        </div>
+    </footer>
+
+    <!-- ملف الـ JavaScript الخارجي -->
+    <script src="script.js"></script>
+</body>
+</html>
